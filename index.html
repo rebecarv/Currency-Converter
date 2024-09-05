@@ -10,39 +10,43 @@
     <header>
         <div class="container">
             <nav>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="."><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></ç>
-                    <li><a href=".">Convert</a></li>
-                    <li><a href=".">About</a></li>
-                    <li><a href=".">Forum</a></li>
+                <ul>
+                    <li><a>Currency Converter</a></li>
                 </ul>
-            <ul>
-                    <li><a href=".">Currency Converter</a></li>
-                    <li class="hideOnMobile"><a href=".">Convert</a></li>
-                    <li class="hideOnMobile"><a href=".">About</a></li>
-                    <li class="hideOnMobile"><a href=".">Forum</a></li>
-                <li class="menu-btn" onclick=showSidebar()><a href="."><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-            </ul>
-        </nav>
+            </nav>
         </div>
     </header>
-    <div class="container">
-        <div class="container-inner">
-            <h1 id="title">Fast, Realiable, Accurate</h1>
+    <main>
+        <section id="cover">       
+        <div class="cover-content">
+            <h1>Fast, Realiable, Accurate</h1>
+            <img src="cash.png" alt="cash and coins" class="">
         </div>
-        
-        <input name="currency" list="currency" placeholder="currency">
-        <datalist id="currency">
-            <option value="">
-            <option value=""> 
-            <option value="">
-            <option value="">
-            <option value="">
-            <option value=""> 
-            <option value="">
-            <option value="">
-        </datalist>
-    </div>
+        </section>
+        <!-- Conversion Form -->
+        <section id="converter">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select id="fromCurrency">
+                <!-- Currency options will go here -->
+            </select>
+            <select id="toCurrency">
+                <!-- Currency options will go here -->
+            </select>
+            <button id="convertButton">Convert</button>
+        </section>
+        <!-- Conversion Result -->
+        <section id="result">
+            <p id="conversionResult">Conversion result will appear here.</p>
+        </section>
+    </main>
+    <aside>
+        <!-- Sidebar content like a live ticker or info goes here -->
+        <p>Live Exchange Rates</p>
+        <!-- Example placeholder -->
+    </aside>
+    <footer>
+        <p>&copy; 2024 Currency Converter. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
