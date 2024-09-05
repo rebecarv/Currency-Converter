@@ -7,6 +7,8 @@
     --primary-color: #71B64F;
     --accent-color: #0DA8A8;
     --complementary-color: #0C535C;
+    --shadow: #5c5c5c83;
+
 
     /* Font Variables */
   --font-family: 'Roboto', sans-serif;
@@ -29,3 +31,79 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
   }
+
+nav {
+    background-color: var(--complementary-color);
+    box-shadow: var(--text-color);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--bg-color)
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--complementary-color);
+    box-shadow: -5px 0 10px var(--shadow);
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar {
+        width: 100%;
+    }
+}
