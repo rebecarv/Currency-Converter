@@ -68,17 +68,8 @@ nav li:first-child {
 /* main text and image */
 #cover {
     background-color: var(--white);
-    padding: 1rem;
     text-align: right;
     width: 100%;
-}
-
-h1 {
-    background: linear-gradient(to right, #71B64F, #325023);
-    background-clip: text;
-    color: transparent;
-    font-weight: var(--font-bold);
-    font-size: 100px;
 }
 
 #frontPage {
@@ -86,42 +77,62 @@ h1 {
     min-height: 100vh;
     display: grid;
     place-items: center;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
     width: 80%;
     max-width: 1170px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    overflow-x: hidden;
-    padding: 5rem 0;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
 }
 
-.row .imgWrapper {
-    overflow: hidden;
-    flex: 1; /* Allows the image wrapper to take up available space */
-    display: flex; /* Flex container for centering image */
-    justify-content: center; /* Centers image horizontally */
-    align-items: center; /* Centers image vertically */
+.imgWrapper {
+    max-width: 100%; /* Ensure wrapper takes full width available */
 }
 
 .row .imgWrapper img {
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
-    object-fit: contain;
+    padding-bottom: 10px;
     transition: 0.3s;
 }
 
 .row .imgWrapper:hover img {
-    transform: scale(0.90);
+    transform: scale(1.10);
 }
 
-.contentWrapper {
-    flex: 1; /* Allows the content wrapper to take up available space */
+.row .contentWrapper {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50%;
 }
 
-.content {
-    max-width: 500px; /* Maximum width for content */
+.row .contentWrapper h1 {
+    background: linear-gradient(to right, #71B64F, #325023);
+    background-clip: text;
+    color: transparent;
+    font-weight: var(--font-bold);
+    font-size: 100px;
+    padding-bottom: 20px;
+}
+
+.row .contentWrapper p {
+    font-size: 16px;
+    font-weight: var(--font-regular);
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.row .contentWrapper button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-weight: var(--font-medium);
+    border-radius: 10px;
+    padding: 15px;
 }

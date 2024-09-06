@@ -1,0 +1,45 @@
+@media (max-width: 991px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .row .contentWrapper {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .row .imgWrapper img {
+        max-width: 400px;
+    }
+    .row {
+        width: 90%;
+    }
+
+    .row .contentWrapper {
+        padding: 20px;
+    }
+
+    .row .contentWrapper h1 {
+        font-size: 70px;
+    }
+    
+    .row .contentWrapper p {
+        line-height: 24px;
+}
+}
+
+@media (max-width: 575px) {
+
+    .row .contentWrapper h1 {
+        font-size: 50px;
+    }
+    
+    .row .contentWrapper p {
+        font-size: 15px;
+        line-height: 22px;
+}
+
+}
