@@ -32,22 +32,29 @@
                 </div>  
         </div>
         </section>
-        
         <!-- Conversion Form -->
-        <section id="converter">
+         <div class="box">
+            <div class="boxFrom">
+              <section id="converter">
             <input type="number" id="amount" placeholder="Enter amount">
             <select id="fromCurrency">
                 <!-- Currency options will go here -->
-            </select>
-            <select id="toCurrency">
+            </select>  
+            </div>
+            <div class="boxTo">
+                <p>To</p>
+                   <select id="toCurrency">
                 <!-- Currency options will go here -->
             </select>
             <button id="convertButton">Convert</button>
+            </div>
         </section>
         <!-- Conversion Result -->
         <section id="result">
             <p id="conversionResult">Conversion result will appear here.</p>
         </section>
+         </div>
+        
     </main>
     <aside>
         <!-- Sidebar content like a live ticker or info goes here -->
