@@ -35,27 +35,31 @@
         </section>
         <!-- Conversion Form -->
          <div id="box">
-            <div class="boxFrom">
-              <section id="converter">
-            <input type="number" id="amount" placeholder="Enter amount">
-            <select id="fromCurrency">
-                <!-- Currency options will go here -->
-            </select>  
+                <div class="input-field">
+                    <input type="text" id="amount" required spellcheck="false"/>
+                    <label>Amount</label>
+                </div>
+            <div class="convertBox">
+                <p>From:</p>
+                <select id="fromCurrency">
+                    <!-- Currency options will go here -->
+                </select>  
             </div>
-            <div class="boxTo">
-                <p>To</p>
-                   <select id="toCurrency">
+            <div class="convertBox">
+                <p>To:</p>
+                 <select id="toCurrency">
                 <!-- Currency options will go here -->
-            </select>
-            <button id="convertButton">Convert</button>
+                </select>
             </div>
         </section>
+        <div class="btn">
+            <button id="convertButton">Convert</button>
+        </div>
         <!-- Conversion Result -->
         <section id="result">
             <p id="conversionResult">Conversion result will appear here.</p>
         </section>
          </div>
-        
     </main>
     <footer>
         <div class="footer-content">

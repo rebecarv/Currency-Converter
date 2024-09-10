@@ -135,24 +135,109 @@ nav li:first-child {
     font-weight: var(--font-medium);
     border-radius: 10px;
     padding: 15px;
-    cursor: pointer;
+}
+
+.row .contentWrapper button:hover {
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: var(--primary-color);
 }
 
 #box {
     background-color: var(--white);
     width: 80%;
     max-width: 1170px;
-    height: 600px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
     padding: 50px;
-    display: grid;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.boxFrom .boxTo {
+#box .convertBox {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.input-field {
+    position: relative; 
+    flex: 1;
+}
+
+.input-field input {
+    width: 70%;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background: transparent;
+    outline: none;
+    color: var(--black);
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--black);
+    font-size: 19px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+input:focus {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: 0;
+    font-size: 16px;
+    padding: 0;
+    background: var(--white);
+}
+
+.convertBox select {
+    width: 80%;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background: transparent;
+    outline: none;
+    color: var(--black);
+    flex: 1;
+}
+
+.convertBox p {
+    font-size: 18px;
+    padding: 15px;
+    justify-content: flex-start;
+}
+
+.btn {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#convertButton {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: var(--font-medium);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    justify-content: flex-end;
+}
     
+ button:hover {
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 footer {
