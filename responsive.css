@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 575px) {
+    .row .imgWrapper img {
+        max-width: 300px;
+    }
 
     .row .contentWrapper h1 {
         font-size: 50px;
