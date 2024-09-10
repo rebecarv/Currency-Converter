@@ -222,13 +222,15 @@ input:valid ~ label {
 .btn {
     display: flex;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    flex-direction: row-reverse;
 }
 
 #convertButton {
     background-color: var(--primary-color);
     color: var(--white);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
+    width: 100px;
     border-radius: 10px;
     padding: 15px;
     font-size: 15px;
@@ -238,6 +240,11 @@ input:valid ~ label {
  button:hover {
     cursor:pointer;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#conversionResult {
+    font-size: 25px;
+    padding: auto;
 }
 
 footer {
