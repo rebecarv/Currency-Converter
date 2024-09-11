@@ -2,6 +2,10 @@
 // Convert Now button page scroll
 document.getElementById('convertNow').addEventListener('click', function() {
     document.getElementById('box').scrollIntoView({ behavior: 'smooth' });
+    // Add some padding by adjusting the scroll position after a short delay
+    setTimeout(function() {
+        window.scrollBy(0, -30); // Adjust the value (-20) to whatever padding you need
+    }, 500); // Adjust the delay (500 ms) to match the smooth scroll duration
 });
 
 
@@ -173,6 +177,22 @@ const currencyData = {
     ZWL: { name: 'Zimbabwean Dollar', flag: '\u{1F1FF}\u{1F1FC}' }
 };
 
+// Ensure only numeric input is accepted 
+const inputField = document.getElementById('amount');
+const errorMessage = document.getElementById('errorMessage');
+
+inputField.addEventListener('input', function () {
+    const nonNumericRegex = /[^0-9]/g;
+
+    // Replace any non-numeric characters with an empty string
+    this.value = this.value.replace(nonNumericRegex, '');
+
+    if (this.value === '') {
+        errorMessage.style.display = 'inline';
+    } else {
+        errorMessage.style.display = 'none';
+    }
+});
 
 // Fetch and populate currency options when the page loads
 async function fetchConversionRates() {
@@ -251,6 +271,7 @@ async function convertCurrency(amount, fromCurrency, toCurrency) {
     } catch (error) {
         console.error('Error during conversion:', error);
     }
+    
 }
 
 // Call function to fetch conversion rates when the page loads
