@@ -255,7 +255,7 @@ footer {
     color: var(--white);
     box-shadow: var(--shadow);
     height: auto;
-    width: 100%vw;
+    width: 100vw;
     padding-top: 20px;
 }
 

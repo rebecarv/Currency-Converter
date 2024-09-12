@@ -188,7 +188,7 @@ inputField.addEventListener('input', function () {
     this.value = this.value.replace(nonNumericRegex, '');
 
     if (this.value === '') {
-        errorMessage.style.display = 'inline';
+        errorMessage.style.display = 'block';
     } else {
         errorMessage.style.display = 'none';
     }
