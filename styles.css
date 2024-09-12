@@ -34,6 +34,7 @@ body {
     font-weight: var(--font-regular);
     background-color: var(--white);
     color: var(--black);
+    overflow-x: hidden;
   }
 
 nav {
@@ -110,7 +111,7 @@ nav li:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 50%;
+    padding-right: 10%;
 }
 
 .row .contentWrapper h1 {
@@ -255,7 +256,7 @@ footer {
     color: var(--white);
     box-shadow: var(--shadow);
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 20px;
 }
 

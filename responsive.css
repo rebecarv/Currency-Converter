@@ -16,10 +16,14 @@
     }
     .row {
         width: 90%;
+        grid-template-columns: 1fr;
+        text-align: center; 
     }
 
     .row .contentWrapper {
         padding: 20px;
+        padding-right: 0;
+        text-align: center;
     }
 
     .row .contentWrapper h1 {

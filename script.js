@@ -4,10 +4,9 @@ document.getElementById('convertNow').addEventListener('click', function() {
     document.getElementById('box').scrollIntoView({ behavior: 'smooth' });
     // Add some padding by adjusting the scroll position after a short delay
     setTimeout(function() {
-        window.scrollBy(0, -30); // Adjust the value (-20) to whatever padding you need
-    }, 500); // Adjust the delay (500 ms) to match the smooth scroll duration
+        window.scrollBy(0, -15);
+    }, 600); 
 });
-
 
 // API Key and URL
 const API_KEY = '3463dd2b745be6a32c1cd3bc'; 
