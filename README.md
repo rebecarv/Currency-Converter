@@ -14,7 +14,7 @@ This project demonstrates the integration of several core web development techno
 This is the main HTML file that serves as the foundation of the website. It contains the structure of the webpage, including:
 - **Header**: Displays the website’s title and an accompanying image (`cash.png`) for visual appeal.
 - **Main Section**: Contains a brief tagline explaining the purpose of the website, followed by a button to initiate currency conversion.
-- **Conversion Form**: Users can select their source and target currencies from dropdown menus, enter an amount, and hit the "Convert Now" button to get the conversion.
+- **Conversion Form**: Users can select their source and target currencies from dropdown menus, enter an amount, and hit the "Convert" button to get the conversion.
 - **Footer**: Links to credits, API information, and general site details.
 
 The HTML is kept semantic, ensuring that the structure is clear and easy to navigate for both users and developers. Additionally, it includes links to the **styles.css** and **responsive.css** files for consistent design and responsiveness.
@@ -31,7 +31,6 @@ This JavaScript file handles all the interactivity and logic of the website, inc
 This file contains all the styles for the website's desktop version. It ensures a modern, clean aesthetic and follows a consistent design language, including:
 - **Color Scheme**: The chosen palette consists of a combination of white, black, blue, and yellow, making the site visually appealing yet professional. The colors are stored as CSS variables, making future edits easier and more scalable.
 - **Typography**: The **Roboto** font is used throughout the site. Different weights (Regular, Medium, Bold) are utilized to create a clear hierarchy between the main title, subheadings, body text, and labels.
-- **Layout**: Flexbox is used extensively to structure the page, keeping elements aligned and adaptable to various screen sizes.
 - **Hover and Focus States**: Buttons and inputs are styled with hover and focus states for better interactivity and accessibility.
 
 ### 4. `responsive.css`
